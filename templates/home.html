@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for song in songs %}
+    <p>{{song.title}} {{song.upvotes}}</p>
+{% endfor %}
+
+{% endblock %}
+{% block log %}
+
+<div>
+{% include 'includes/reglog.html' %}   
+</div>
+{% endblock %}
